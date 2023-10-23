@@ -13,6 +13,7 @@ print("Hello")
 # git status : voir l'état des choses
 
 # Ajouter un fichier au studio de photos : git add <fichier> : cela permet de quitter le dépôt local pour le staging area
+# Ajouter tous les fichiers au staging area : git add . 
 
 # Il peut y avoir des fichiers ou dossiers que je ne veux pas suivre (avec Git) : 
 # Je créer alors le fichier .gitignore et je les y insère
@@ -40,10 +41,15 @@ print("Hello")
 # Pour envoyer notre album photo ; donc notre dépôt local actuel sur github : git push -u origin main
 
 
-
+########################################################
+###########################################################
+# Mode COLLABORATIOn
 # Cette fois, je veux plutôt récupérer le dépôt github sur mon PC
 # 1. Je fais git clone <le lien du dépôt github que j'aurai copié>
 # 2. Ensuite avec d'apporter toute modification, je vais créer une nouvelle branche à partir de l'état actuel du dépôt ; afin d'éviter des conflits de modifications. Je ne vais donc pas travailler sur la branche main.
 # 3. Pour créer une nouvelle branch j'utilise : git checkout -b <nom de la branche> : -b permet de switcher directement sur la nouvelle bfranche
-# 4. Ainsi l'ensemble de mes modifications seront sur ces branches là.
-
+# 4. Ainsi l'ensemble de mes modifications seront sur ces branches là. Après avoir add et commit mes modifications, je vais push cette branche là pour rendre accessible mes nouvelles modifications à mes collaborateurs sur github : git push origin <nom branch>
+# 5. Je verrai automatiquement ma modification sur github : Et je créer un pull request ; ajouter un commentaire sur mon apport pour mes collaborateurs. 
+# 6. Il est important pour chaque push vers github de bien travailler sur une seule fonctionnialité donc réaliser un seul commit, de bien documenter pour permettre aux collaborateurs de comprendre. 
+# 7. Le pull request pourra être manager dans github, on peurra demander des apports de mofications. On pourra aussi merge ma modification dans la branche main. 
+# 8. Après le merge du pull request ; je peux supprimer la nouvelle branche. 
