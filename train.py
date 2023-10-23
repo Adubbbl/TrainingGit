@@ -44,4 +44,6 @@ print("Hello")
 # Cette fois, je veux plutôt récupérer le dépôt github sur mon PC
 # 1. Je fais git clone <le lien du dépôt github que j'aurai copié>
 # 2. Ensuite avec d'apporter toute modification, je vais créer une nouvelle branche à partir de l'état actuel du dépôt ; afin d'éviter des conflits de modifications. Je ne vais donc pas travailler sur la branche main.
-# 3. Pour créer une nouvelle branch j'utilise : 
+# 3. Pour créer une nouvelle branch j'utilise : git checkout -b <nom de la branche> : -b permet de switcher directement sur la nouvelle bfranche
+# 4. Ainsi l'ensemble de mes modifications seront sur ces branches là.
+
