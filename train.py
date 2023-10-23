@@ -38,3 +38,10 @@ print("Hello")
 # Pour établir le lien entre notre dépôt local et github : git remote add origin <lien vers le dépôt github avec .git à la fin ; par exemple https://github.com/root529/TrainingGit.git>
 # To remove origin donc la liaison à github : git remote remove origin
 # Pour envoyer notre album photo ; donc notre dépôt local actuel sur github : git push -u origin main
+
+
+
+# Cette fois, je veux plutôt récupérer le dépôt github sur mon PC
+# 1. Je fais git clone <le lien du dépôt github que j'aurai copié>
+# 2. Ensuite avec d'apporter toute modification, je vais créer une nouvelle branche à partir de l'état actuel du dépôt ; afin d'éviter des conflits de modifications. Je ne vais donc pas travailler sur la branche main.
+# 3. Pour créer une nouvelle branch j'utilise : 
