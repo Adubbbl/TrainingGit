@@ -25,7 +25,7 @@ print("Hello")
 # git commit - m "On donne un nom à la photo" : Le nom est souvent un résumé de la modification que j'ai apporté # Cela revient en quelque sorte à prendre une photo de l'état actuel de mes fichiers
 # L'exécution peut nécessité mon identification au préalable avec : git config --global user.email "you@example.com"
 
-# Pour visualiser l'historique de mes photos, donc l'historique de mes commit dans le dépôt local : git log --online
+# Pour visualiser l'historique de mes photos, donc l'historique des commit : git log --oneline (pour les avoir en une ligne)
 # On obtient par exemple :
 # aac5fbb (HEAD -> master) add files and first notes : le code représente notre photo
 
@@ -53,3 +53,12 @@ print("Hello")
 # 6. Il est important pour chaque push vers github de bien travailler sur une seule fonctionnialité donc réaliser un seul commit, de bien documenter pour permettre aux collaborateurs de comprendre. 
 # 7. Le pull request pourra être manager dans github, on peurra demander des apports de mofications. On pourra aussi merge ma modification dans la branche main. 
 # 8. Après le merge du pull request ; je peux supprimer la nouvelle branche. 
+
+
+################ GIT PULL
+## Pour mettre à jour ma branche main par rapport à la branche main du dépôt github, je fais : git pull  
+## Pour supprimer la branche dont je n'ai plus besoin, je fais : git branch -d <nom branch>
+
+################ MERGE CONFLIT
+# On peut voir les lignes qui ont des problèmes et accepté ce qui m'interesse 
+# Pour voir qui a ajouté chaque ligne de mon fichier : git  blame <nom fichier> : Il renvoie chaque ligne avec le nom de l'auteur
