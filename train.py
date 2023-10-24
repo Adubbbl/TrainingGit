@@ -16,7 +16,7 @@ print("Hello")
 # Ajouter tous les fichiers au staging area : git add . 
 
 # Il peut y avoir des fichiers ou dossiers que je ne veux pas suivre (avec Git) : 
-# Je créer alors le fichier .gitignore et je les y insère
+# Je créer alors le fichier .gitignore et je les y insère. Ces fichiers n'iront donc pas sur github
 
 # git rm -rf --cached : Enlevez l'ensemble des fichiers qui se trouvent dans le studio
 
@@ -27,7 +27,7 @@ print("Hello")
 
 # Pour visualiser l'historique de mes photos, donc l'historique des commit : git log --oneline (pour les avoir en une ligne)
 # On obtient par exemple :
-# aac5fbb (HEAD -> master) add files and first notes : le code représente notre photo
+# aac5fbb (HEAD -> master) add files and first notes : le code représente notre photo . Ce qui pourra être utile pour revenir en arrière
 
 # Github ##################
 # on veut que d'autres personnes puissent modifier notre fichier. On va mettre notre dépôt local sur github
@@ -62,3 +62,15 @@ print("Hello")
 ################ MERGE CONFLIT
 # On peut voir les lignes qui ont des problèmes et accepté ce qui m'interesse 
 # Pour voir qui a ajouté chaque ligne de mon fichier : git  blame <nom fichier> : Il renvoie chaque ligne avec le nom de l'auteur
+
+# J'ai ajouté un fichier à staging area par erreur (C'est à dire qu'en réalité, je ne souhaite pas envoyer ce fichier sur github). 
+# Pour annuler cela, je fais : git restore --staged <nom fichier>
+
+# Pour quitter le dépôt local pour staging area (c'est à dire annuler un commit) : git revert ou git resert 
+
+################# COMMIT ULTERIEUR
+# J'ai fais plusieurs commit V1, V2, V3, V4. Mais je me rends compte que V2 est mieux donc je souhaite y revenir pour l'utiliser. 
+# Je fais : git checkout -b < le code du commit V2>  <nom new branch > - 
+# Cela va créer une nouvelle branche et mon état présent sera V2 à qui je pourrai apporter de nouvelles modifications sans mettre en péril les autres versions après V2
+# Mes commit suivantes seront sur la nouvelle branche
+# Attention je maintien cette branche plus tard, je risque de perdre mes autres versions V3 et V4
