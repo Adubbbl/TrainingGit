@@ -1,6 +1,5 @@
 ﻿# Rappel sur l'utilisation de github et git
-## Auteur : Aduni Lawani
-## Source : Formation Youtube [Kevin Degila](https://github.com/kevindegila)
+## Source de départ : Formation Youtube [Kevin Degila](https://github.com/kevindegila)
 
 - Création du dossier local
 - Création du stagin area
