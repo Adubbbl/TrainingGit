@@ -6,12 +6,12 @@ Il s'agit de notre dossier sur notre machine physique. Il contiendra l'ensemble 
 ### Création du staging area 
 Il s'agit d'un endroit où on se prépare à prendre des états (photos) de notre projet. On y stocke temporairement nos modifications
 
-- **Pour le créer :** git init | Cela créer un dossier caché .git dans notre projet ; ce dossier contiendra toutes les manipulations qu'on réalisera dans notre projet avec git.
-- **Pour voir l'état des choses :** git status
+- **Pour le créer : git init** | Cela créer un dossier caché .git dans notre projet ; ce dossier contiendra toutes les manipulations qu'on réalisera dans notre projet avec git.
+- **Pour voir l'état des choses : git status**
 - **Ajouter un fichier au staging area :** git add <fichier> : cela permet de quitter le dossier local pour le staging area
-- **Ajouter tous les fichiers de notre projet au staging area :** git add . 
-- **Enlevez l'ensemble des fichiers qui se trouvent dans le staging area :** git rm -rf --cached 
-- Pour **annuler un fichier que j'ai ajouté à staging area par erreur** : git restore --staged <nom du fichier>
+- **Ajouter tous les fichiers de notre projet au staging area : git add .** 
+- **Enlevez l'ensemble des fichiers qui se trouvent dans le staging area : git rm -rf --cached**  
+- Pour **annuler un fichier que j'ai ajouté à staging area par erreur : git restore --staged <nom du fichier>** 
 
 #### Cacher des fichiers aux manipulations git : ne pas les suivre et donc ne pas envoyer sur github
 Il peut y avoir des fichiers ou dossiers que je ne veux pas suivre (avec Git) : 
@@ -21,9 +21,9 @@ Il peut y avoir des fichiers ou dossiers que je ne veux pas suivre (avec Git) :
 
 ### Création du dépôt Local
 On va y stocker en quelque sorte des états de notre projet, donc créer un album. 
-- Pour **passer une modification du staging area au dépôt Local**, on utilise git commit - m "On donne un nom à la photo" : Le nom est souvent un résumé de la modification que j'ai apporté # Cela revient en quelque sorte à prendre une photo de l'état actuel de mes fichiers. L'exécution peut nécessité mon identification au préalable avec : **git config --global user.email "you@example.com"** ou **git config --global user.name "you@example.com"**
-- Pour visualiser **l'historique de mes photos, donc l'historique des commit** : git log --oneline (pour les avoir en une ligne). On obtient par exemple aac5fbb (HEAD -> master) add files and first notes : le code représente notre photo . Ce qui pourra être utile pour revenir en arrière
-- Pour **quitter le dépôt local pour staging area** (c'est à dire annuler un commit) : git revert ou git resert 
+- Pour **passer une modification du staging area au dépôt Local**, on utilise **git commit - m "On donne un nom à la photo"**  : Le nom est souvent un résumé de la modification que j'ai apporté # Cela revient en quelque sorte à prendre une photo de l'état actuel de mes fichiers. L'exécution peut nécessité mon identification au préalable avec : **git config --global user.email "you@example.com"** ou **git config --global user.name "you@example.com"**
+- Pour visualiser **l'historique de mes photos, donc l'historique des commit : git log --oneline**  (pour les avoir en une ligne). On obtient par exemple aac5fbb (HEAD -> master) add files and first notes : le code représente notre photo . Ce qui pourra être utile pour revenir en arrière
+- Pour **quitter le dépôt local pour staging area** (c'est à dire annuler un commit) : **git revert ou git resert**  
 
 
 ### Github 
@@ -32,7 +32,7 @@ On veut que d'autres personnes puissent modifier notre fichier. On va mettre not
 - **Envoyez son projet sur github**
     1. Il faut créer un répertoire dans github :  c'est dans cela que sera uploader notre dépôt local
     2. Changer la branche "master" par défaut en "main" dans notre dépôt local (C'est ainsi qu'elle se nomme désormais ) : git branch -M main 
-    3. Etablir le lien entre notre dépôt local et github : git remote add origin <lien vers le dépôt github avec .git à la fin ; par exemple https://github.com/root529/TrainingGit.git>. 
+    3. Etablir le lien entre notre dépôt local et github : **git remote add origin <lien vers le dépôt github avec .git à la fin ; par exemple https://github.com/root529/TrainingGit.git>.** 
     Pour **effacer origin donc la liaison à github** : git remote remove origin
     4. Pour envoyer notre album photo ; donc notre dépôt local actuel sur github : git push -u origin main
 
